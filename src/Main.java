@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
@@ -37,14 +39,55 @@ public class Main {
         double percent = 7D / 100;
         int montnBank = 0;
         while (cash < bank) {
-            cash = (int) (cash *(1 + percent));
-            montnBank ++;
-            System.out.println(" Месяц "+ montnBank+ " сумма накоплений равна "+ cash + " рублей");
+            cash = (int) (cash * (1 + percent));
+            montnBank++;
+            System.out.println(" Месяц " + montnBank + " сумма накоплений равна " + cash + " рублей");
         }
 
+        System.out.println(" Задача 5 ");
+         cash = 15_000;
+         bank = 12_000_000;
+         percent = 7D / 100;
+         montnBank = 0;
+            while (cash < bank) {
+                cash = (int) (cash * (1 + percent));
+                montnBank++;
+                if (montnBank % 6 == 0) {
+                    System.out.println(" Месяц " + montnBank + " сумма накоплений равна " + cash + " рублей");
+                }
+            }
+
+                System.out.println(" Задача 6 ");
+                cash = 15_000;
+                bank = 12_000_000;
+                percent = 7D / 100;
+                montnBank = 0;
+                int months = 12 * 9;
+                while (montnBank < months) {
+                    cash = (int) (cash * (1 + percent));
+                    montnBank++;
+                    if (montnBank % 6 == 0) {
+                        System.out.println(" Месяц " + montnBank + " сумма накоплений равна " + cash + " рублей");
+                    }
+
+                }
+        System.out.println("Задача 7");
+         int ferstFriday = 3;
+         for (int day = ferstFriday; day <= 31; day += 7) {
+             System.out.println("Сегодня пятница, " + day+ "-е число. Необходимо подготовить отчет");
 
 
-
-
+        }
+         System.out.println("Задача 8");
+         int period = 79;
+         int god = 2024;
+         int startSeeng = 0;
+         int stert = god - 200;
+         int finish = god + 100;
+         for (int years = startSeeng; years < finish; years += period) {
+             if (years > stert) {
+                 System.out.println(years);
+             }
+         }
     }
 }
