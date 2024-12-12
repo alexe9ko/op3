@@ -78,7 +78,7 @@ public class Main {
 
 
         }
-         System.out.println("Задача 8");
+         System.out.println("Задача 8.");
          int period = 79;
          int god = 2024;
          int startSeeng = 0;
