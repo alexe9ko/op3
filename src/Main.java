@@ -70,7 +70,7 @@
                 }
 
             }
-            System.out.println("Задача 7");
+            System.out.println("Задача 7.");
             int ferstFriday = 3;
             for (int day = ferstFriday; day <= 31; day += 7) {
                 System.out.println("Сегодня пятница, " + day+ "-е число. Необходимо подготовить отчет");
